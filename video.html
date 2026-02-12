@@ -2,24 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting…</title>
+  <title>Continue to Video</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+      background: #f9f9f9;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 16px 28px;
+      background: #1abc9c;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 6px;
+    }
+    p {
+      margin-top: 20px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
 
+<h1>Almost there…</h1>
+
+<a class="button" id="goVideo" href="https://515b5e5n-nfkxnbakhsx--ko77.hop.clickbank.net" target="_blank">
+  ▶ Continue to Free Video
+</a>
+
+<p>You’ll be returned automatically.</p>
+
 <script>
-  // 1. Open affiliate video in a new tab
-  window.open(
-    "https://515b5e5n-nfkxnbakhsx--ko77.hop.clickbank.net",
-    "_blank"
-  );
-
-  // 2. Redirect current tab back to your site after a short delay
-  setTimeout(function () {
-    window.location.href = "https://www.fatlossultra.com/";
-  }, 500);
+  document.getElementById("goVideo").addEventListener("click", function () {
+    setTimeout(function () {
+      window.location.href = "https://www.fatlossultra.com/";
+    }, 1500);
+  });
 </script>
-
-<p>Redirecting…</p>
 
 </body>
 </html>
