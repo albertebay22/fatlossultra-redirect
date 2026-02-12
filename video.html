@@ -33,9 +33,27 @@
 
 <h1>Almost there…</h1>
 
-<a class="button" id="goVideo" href="https://515b5e5n-nfkxnbakhsx--ko77.hop.clickbank.net" target="_blank" rel="noopener noreferrer">
+<button class="button" id="goVideo">
   ▶ Continue to Free Video
-</a>
+</button>
+
+<script>
+  document.getElementById("goVideo").addEventListener("click", function () {
+
+    // Open affiliate in new tab (forced)
+    window.open(
+      "https://515b5e5n-nfkxnbakhsx--ko77.hop.clickbank.net",
+      "_blank"
+    );
+
+    // Return this tab to your site
+    setTimeout(function () {
+      window.location.href = "https://www.fatlossultra.com/";
+    }, 1500);
+
+  });
+</script>
+
 
 <p>You’ll be returned automatically.</p>
 
